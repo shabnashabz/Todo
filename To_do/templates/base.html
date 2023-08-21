@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    {% comment %} <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+            Online Movie store
+            </a>
+            <!-- Add a button to the right side of the nav bar -->
+            <a href="{% url 'movieapp:add_movie' %}"class="btn btn-primary">Add Movie</a>
+            </nav> {% endcomment %}
+    <body>
+          {% block content %}
+          {% endblock %}
+    </body>
+</html>
